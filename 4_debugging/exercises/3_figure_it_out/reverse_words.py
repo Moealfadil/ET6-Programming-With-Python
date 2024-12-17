@@ -33,6 +33,6 @@ def reverse_words(text: str) -> str:
     result = ""
     
     for word in words:
-        result = " " + word + result
+        result = word + result
         
     return result

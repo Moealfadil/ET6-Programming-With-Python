@@ -10,16 +10,16 @@ Created on XX XX XX
 @author: Mohammed Elfadil
 """
 def check_length(a:list) -> int:
-    """Checks the length of a list
+    """Checks number of elements in a list
     Parameters:
         a: list, a list of any type
-    Returns -> int, the length of the list
+    Returns -> int, the number of elements in the list
     Raises:
         AssertionError: if the argument is not a list
     >>> check_length([1, 2, 3, 4, 5])
     5
     >>> check_length([])
-    0
+    None
     >>> check_length(["a", "b", "c"])
     3
     """

@@ -15,7 +15,17 @@ def sort_list(a:list, b=None)->list:
         a: list of integers
         b: list of integers, default is None
     Returns:
-        list of integers sorted in ascending order"""
+        list of integers sorted in ascending order
+    Raises:
+        AssertionError: if a is not a list
+        AssertionError: if a is not a list of integers
+    >>> sort_list([3, 2, 1])
+    [1, 2, 3]
+    >>> sort_list([3, 2, 1, 4, 5])
+    [1, 2, 3, 4, 5]
+    >>> sort_list([1, 2, 3])
+    [1, 2, 3]
+    """
     if b is None:
         b = []
     while a:

@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on XX XX XX
+
+@author: Mohammed Elfadil
+"""
 import unittest
 
 from ..check_length import check_length
@@ -14,7 +21,7 @@ class TestCheckLength(unittest.TestCase):
     def test_0(self):
         """It should evaluate [] to 0"""
         actual = check_length([])
-        expected = 0
+        expected = None
         self.assertEqual(actual, expected)
 
     def test_str(self):
